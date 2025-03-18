@@ -1,0 +1,35 @@
+extends common/layout
+
+block layout-content
+  .main-content
+    h1.page-title Emotiquote API
+    
+
+    .button-container
+      button(onclick="fetchRandomQuote()") Random Quote
+      button(onclick="fetchQuote('joy')") Joy
+      button(onclick="fetchQuote('sadness')") Sadness
+      button(onclick="fetchQuote('fear')") Fear
+      button(onclick="fetchQuote('anger')") Anger
+      button(onclick="fetchQuote('disgust')") Disgust
+
+    .quote-display
+      h2#quote-text Select a button to get a random affirmation, or an affirmation based on an emotion.
+      p#quote-source
+
+    .api-information 
+        h2 API Information
+        p This app uses the Emotiquote API to generate random affirmations and affirmations based on emotions. 
+        p The API is free to use, and you can find more information about it at the links below:
+        p 
+            a(href="#") Emotiquote API on Github 
+        p   
+            a(href="#") Emotiquote API on Postman 
+
+        h2 API Endpoints 
+        ul
+            li GET /api/quotes/random - returns a random affirmation
+            li GET /api/quotes/:emotion - returns an affirmation based on these emotion categories: joy, sadness, fear, anger, disgust
+
+  // script loads after content loads
+  script(src="/scripts.js")
