@@ -3,21 +3,25 @@ extends common/layout
 block layout-content
   .main-content
 
-    .affirmation-box 
-      
-      h1.page-title Emotiquote API
+    .hero-container
+      .affirmation-box 
+        
+        h1.page-title Emotiquote API
 
-      .quote-display
-        p#quote-text Select a button to get a random affirmation, or an affirmation based on an emotion.
-        p#quote-source
+        .quote-display
+          p#quote-text Select a button to get a random affirmation, or an affirmation based on an emotion.
+          p#quote-source
 
-      .button-container
-        button.random(onclick="fetchRandomQuote()") Random Quote
-        button(onclick="fetchQuote('joy')") Joy
-        button(onclick="fetchQuote('sadness')") Sadness
-        button(onclick="fetchQuote('fear')") Fear
-        button(onclick="fetchQuote('anger')") Anger
-        button(onclick="fetchQuote('disgust')") Disgust
+        .button-container
+          button.random(onclick="fetchRandomQuote()") Random Quote
+          button(onclick="fetchQuote('joy')") Joy
+          button(onclick="fetchQuote('sadness')") Sadness
+          button(onclick="fetchQuote('fear')") Fear
+          button(onclick="fetchQuote('anger')") Anger
+          button(onclick="fetchQuote('disgust')") Disgust
+    
+      .hero-image 
+        img(src="/images/hero-image.png" alt="emotions illustration" width="90%")
 
       
 

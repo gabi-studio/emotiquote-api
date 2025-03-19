@@ -10,16 +10,34 @@ body {
 
 }
 
-.affirmation-box {
+.hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: #fcf4ce;
     color: #2e2c27;
     padding: 1rem 3rem;
     border-radius: 0 200px 0 0;
     box-shadow: 0 0 10px rgba(43, 41, 41, 0.05)
     display inline-block;
-    margin: 1rem 1rem 1rem 0;
+    margin: 2rem 2rem 2rem 0;
+    text-align: left;
+}
+
+.affirmation-box {
+    /* background-color: #fcf4ce;
+    color: #2e2c27;
+    padding: 1rem 3rem;
+    border-radius: 0 200px 0 0;
+    box-shadow: 0 0 10px rgba(43, 41, 41, 0.05)
+    display inline-block;
+    margin: 1rem 1rem 1rem 0; */
     text-align: left;
     
+}
+
+.hero-image {
+    height: auto;
+
 }
 
 h1 {
@@ -54,7 +72,7 @@ button {
     margin: 15px;
     cursor: pointer;
     border-radius: 25px;
-    width: 15%;
+    width: 25%;
 }
 
 
