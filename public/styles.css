@@ -1,44 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body {
-    font-family: Arial, sans-serif;
+    
     text-align: center;
-    background-color: #201609;
-    padding: 3rem 20rem;
+    background-color: #a68b01;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+
 }
 
-main {
-    background-color: #fbeeae;
-    padding: 1rem;
-    border-radius: 35px;
+.affirmation-box {
+    background-color: #fcf4ce;
+    color: #2e2c27;
+    padding: 1rem 3rem;
+    border-radius: 0 100px 0 0;
     box-shadow: 0 0 10px rgba(43, 41, 41, 0.05)
     display inline-block;
+    margin: 1rem 1rem 1rem 0;
+    text-align: left;
+    
+}
+
+h1 {
+    font-family: 'Limelight', cursive;
+    font-size: 4em;
+    margin-top: 30px;
 }
 
 
 h2 {
-    color: #1a1917;
-    font-size: 1.25em;
-    margin-top: 20px;
+    font-family: 'Limelight', cursive;
+    font-size: 2.25em;
+    margin-top: 30px;
 }
 
-p {
-    color: #1a1917;
-    font-size: 0.8em;
-    
+
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
 }
 
 button {
-    background-color: #f3e300;
+    background-color: #ffd500;
     font-size: 0.8em;
     color: #1a1917;
     padding: 10px 20px;
     border: none;
-    margin: 5px;
+    margin: 15px;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 25px;
+    width: 10%;
 }
 
 button:hover {
-    background-color: #e9d902;
+    background-color: #dcb800;
 }
 
 #quote-container {
@@ -53,27 +74,33 @@ button:hover {
 #quote-text {
     font-size: 1.25em;
     font-weight: 700;
-    padding: 1em;
+    
 }
 
 #quote-source {
     margin-top: 10px;
     font-style: italic;
-    color: gray;
+    
     
 }
 
+/* api information is a grid container with two columns */
 .api-information {
-    margin-top: 20px;
-    font-size: 0.8em;
-    color: #1a1917;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    margin:1rem;
+    gap: 2rem;
+    font-size: 1.25em;
+    color: #ffffff;
     text-align: justify;
-    padding: 1em;
+    
 }
 
 
 #footer {
     margin-top: 20px;
+    padding: 1rem;
     font-size: 0.8em;
     color: #fff;
     text-align: center;
@@ -83,16 +110,16 @@ button:hover {
 a {
     color: #fff;
     text-decoration: none;
-    background-color: #d84703;
+    background-color: #2e2c27;
     padding: 2px 8px;
     border-radius: 15px;
 }
 
 a:hover {
-    background-color: #b03902;
+    background-color: #464134;
     color: #ffffff;
 }
 
 li {
-    font-size: 0.8em;
+    font-size: 1em;
 }
