@@ -5,7 +5,7 @@
 body {
     
     text-align: center;
-    background-color: #a68b01;
+    background-color: #6a5600;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
@@ -16,7 +16,7 @@ body {
     background-color: #fcf4ce;
     color: #2e2c27;
     padding: 1rem 3rem;
-    border-radius: 0 100px 0 0;
+    border-radius: 0 200px 0 0;
     box-shadow: 0 0 10px rgba(43, 41, 41, 0.05)
     display inline-block;
     margin: 1rem 1rem 1rem 0;
@@ -47,19 +47,20 @@ h2 {
 }
 
 button {
-    background-color: #ffd500;
-    font-size: 0.8em;
+    background-color: #b39200;
+    font-size: 1em;
     color: #1a1917;
+    font-family: 'Raleway', sans-serif;
     padding: 10px 20px;
     border: none;
     margin: 15px;
     cursor: pointer;
     border-radius: 25px;
-    width: 10%;
+    width: 15%;
 }
 
 button:hover {
-    background-color: #dcb800;
+    background-color: #ebc403;
 }
 
 #quote-container {
@@ -108,15 +109,15 @@ button:hover {
 }
 
 a {
-    color: #fff;
+    color: #464134;
     text-decoration: none;
-    background-color: #2e2c27;
-    padding: 2px 8px;
+    background-color: #ffffff;
+    padding: 5px 10px;
     border-radius: 15px;
 }
 
 a:hover {
-    background-color: #464134;
+    background-color: #878070;
     color: #ffffff;
 }
 
