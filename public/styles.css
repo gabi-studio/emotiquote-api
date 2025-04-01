@@ -56,9 +56,9 @@ h2 {
 
 
 .button-container {
-    margin-top: 20px;
+    margin: 2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 1rem;
 }
 
@@ -80,6 +80,11 @@ button:hover {
     background-color: #ebc403;
 }
 
+button:active {
+    border: 2px solid #ddb502;
+    
+}
+
 button.random {
     background-color: #ebc403;
 
@@ -87,6 +92,10 @@ button.random {
 
 button.random:hover {
     background-color: #ffd30f;
+}
+
+button.random:active {
+    border: 2px solid #dfb600;
 }
 
 #quote-container {
@@ -150,3 +159,40 @@ a:hover {
 li {
     font-size: 1em;
 }
+
+
+/* media query for mobile devices */
+@media (max-width: 768px) {
+    .hero-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        margin: 0.5rem;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1em;
+    }
+    
+    
+
+    .api-information {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        margin: 1rem;
+    }
+}
+
